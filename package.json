@@ -1,0 +1,27 @@
+{
+  "private": true,
+  "name": "knex-skeleton",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "http://github.com/dragonprojects/knex-skeleton",
+  "author": {
+    "name": "Sharaal",
+    "email": "developer@dragonprojects.de",
+    "url": "http://dragonprojects.de"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dragonprojects/knex-skeleton.git"
+  },
+  "readmeFilename": "README.md",
+  "scripts": {
+    "develop": "node src/web.js"
+  },
+  "dependencies": {
+    "knex": "^0.12.5",
+    "sqlite3": "^3.1.6"
+  },
+  "engines": {
+    "node": "^6.7.0"
+  }
+}
