@@ -6,4 +6,7 @@ const config = require('../knexfile.js');
 const knex = require('knex')(config[env]);
 
 knex.migrate.latest([config])
-  .then(() => { console.log('knex migrate finished'); });
+  .then(() => {
+    console.log('knex migrate finished');
+    knex.destroy();
+  });
