@@ -1,9 +1,9 @@
 {
   "private": true,
-  "name": "knex-skeleton",
+  "name": "bookshelfjs-knex-skeleton",
   "version": "1.0.0",
   "description": "",
-  "homepage": "http://github.com/dragonprojects/knex-skeleton",
+  "homepage": "http://github.com/dragonprojects/bookshelfjs-knex-skeleton",
   "author": {
     "name": "Sharaal",
     "email": "developer@dragonprojects.de",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dragonprojects/knex-skeleton.git"
+    "url": "https://github.com/dragonprojects/bookshelfjs-knex-skeleton.git"
   },
   "readmeFilename": "README.md",
   "scripts": {
