@@ -18,6 +18,7 @@
     "develop": "node src/web.js"
   },
   "dependencies": {
+    "bookshelf": "^0.10.2",
     "knex": "^0.12.5",
     "sqlite3": "^3.1.6"
   },

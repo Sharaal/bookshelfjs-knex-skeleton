@@ -10,3 +10,14 @@ knex.migrate.latest([config])
     console.log('knex migrate finished');
     knex.destroy();
   });
+
+const bookshelf = require('bookshelf')(knex);
+
+const User = require('./models/User.js')(bookshelf);
+
+User.where('username', 'sharaal').fetch().then((user) => {
+  console.log('user with username "sharaal" fetched');
+  console.log(user.toJSON());
+}).catch((err) => {
+  console.error(err);
+});

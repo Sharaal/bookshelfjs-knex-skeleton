@@ -8,7 +8,12 @@ module.exports = {
       table.string('password');
       table.string('nickname');
       table.string('email');
-    }),
+    }).then(() => {
+        return knex('users').insert([
+          { username: 'sharaal', password: 'sharaal', nickname: 'Sharaal', email: 'developer@dragonprojects.de' },
+        ]);
+      }
+    ),
   ]),
   down: (knex, Promise) => Promise.all([
     knex.schema.dropTable('users'),
